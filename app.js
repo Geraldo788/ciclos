@@ -14,8 +14,25 @@
 
 // }
 
+    let bandera = 0
+    while (true) {
+    let entrada = prompt("Ingrese el valor")
+    if(entrada == "a"){
+        bandera = sumar (bandera, parseInt(entrada))
+
+    }else if (entrada == "b")
+             bandera = restar (bandera, parseInt(entrada))
 
 
-let numero = parseInt(prompt("ingrese el numero"))
+    break;
+    console.log(bandera)
+    }
 
-let primo = 
+function sumar (anterior, nuevo){
+    return anterior += nuevo;
+
+    function resta ( anterior, nuevo){
+        return anterior -= nuevo
+    }
+
+}
